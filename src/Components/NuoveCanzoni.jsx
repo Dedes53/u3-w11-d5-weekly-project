@@ -4,7 +4,6 @@ import { setCurrentSong } from '../redux/actions/musicActions';
 function NuoveCanzoni({ songData }) {
     const dispatch = useDispatch();
 
-    //click per player
     const handleClick = () => {
         dispatch(setCurrentSong(songData));
     };
@@ -12,27 +11,17 @@ function NuoveCanzoni({ songData }) {
     return (
         <div
             onClick={handleClick}
-            style={{
-                cursor: 'pointer',
-                minWidth: '150px',
-                transition: 'transform 0.3s'
-            }}
-            className="nuova-canzone-card"
+            className="song-card"
         >
             <img
-                className="rounded"
-                style={{
-                    width: "150px",
-                    height: "150px",
-                    objectFit: "cover"
-                }}
+                className="rounded song-card-img"
                 src={songData.album.cover_medium}
                 alt={songData.title}
             />
-            <p className="mb-0 mt-2 small fw-bold text-truncate" style={{ width: '150px' }}>
+            <p className="song-card-title">
                 {songData.title}
             </p>
-            <p className="small text-muted text-truncate mb-0" style={{ width: '150px' }}>
+            <p className="song-card-artist">
                 {songData.artist.name}
             </p>
         </div>

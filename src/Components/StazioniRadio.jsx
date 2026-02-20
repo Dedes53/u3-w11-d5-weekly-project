@@ -1,9 +1,10 @@
 import RadioCard from "./RadioCard";
 import radioImg1 from '../assets/images/1a.png'
 import radioImg2 from '../assets/images/1b.png'
+
 function Stazioniradio() {
     return (
-        <div className="d-flex flex-nowrap overflow-auto gap-3">
+        <div className="radio-stations-wrapper">
             <RadioCard
                 description="Rilassati, al resto ci pensiamo noi. Ascolta Apple Music Chill"
                 image={radioImg1}

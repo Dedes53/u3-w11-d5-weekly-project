@@ -10,7 +10,7 @@ function Novita() {
 
             <Stazioniradio />
             <NuoviEpisodi />
-            <NuoveUscite />
+            <NuoveUscite query="queen" />
 
         </Container>
     )

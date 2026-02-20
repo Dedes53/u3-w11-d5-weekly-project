@@ -32,7 +32,7 @@ export const clearError = () => ({
 // chiamata API 
 const API_BASE_URL = 'https://striveschool-api.herokuapp.com/api/deezer/search';
 
-export const fetchSongs = (query = 'pop') => {
+export const fetchSongs = (query = 'queen') => {
     return (dispatch) => {
         dispatch({
             type: FETCH_SONGS_REQUEST,

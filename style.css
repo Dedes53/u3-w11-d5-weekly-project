@@ -18,7 +18,6 @@
     color: var(--AppleMusicRed);
 }
 
-
 .player-fixed {
     position: fixed;
     bottom: 0;
@@ -29,17 +28,179 @@
     backdrop-filter: blur(10px);
 }
 
-
 body {
     padding-bottom: 100px;
 }
 
 
-.nuova-canzone-card {
+.radio-stations-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 1rem;
+    padding: 1rem 0;
+    scroll-behavior: smooth;
+}
+
+/* Scrollbar personalizzata */
+.radio-stations-wrapper::-webkit-scrollbar {
+    height: 8px;
+}
+
+.radio-stations-wrapper::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.radio-stations-wrapper::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+    .radio-stations-wrapper {
+        flex-wrap: wrap;
+        overflow-x: visible;
+    }
+}
+
+
+
+.radio-stations-wrapper .radio-card {
+    flex: 0 0 auto;
+    padding: 1rem;
+    width: 320px;
+}
+
+
+@media (min-width: 768px) {
+    .radio-stations-wrapper .radio-card {
+        width: calc(50% - 0.5rem);
+    }
+}
+
+
+.radio-stations-wrapper .radio-card-img {
+    width: 300px;
+    max-width: 100%;
+}
+
+@media (min-width: 768px) {
+    .radio-stations-wrapper .radio-card-img {
+        width: 100%;
+    }
+}
+
+/* wrapper */
+.songs-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 1rem;
+    padding: 1rem 0;
+    scroll-behavior: smooth;
+}
+
+.songs-wrapper::-webkit-scrollbar {
+    height: 8px;
+}
+
+.songs-wrapper::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.songs-wrapper::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+}
+
+/* song card (sia canzoni che episodi) */
+.song-card {
+    flex: 0 0 auto;
+    cursor: pointer;
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.nuova-canzone-card:hover {
+.song-card {
+    width: 120px;
+}
+
+.song-card-img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+}
+
+@media (min-width: 576px) {
+    .song-card {
+        width: 150px;
+    }
+
+    .song-card-img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+
+@media (min-width: 768px) {
+    .song-card {
+        width: 180px;
+    }
+
+    .song-card-img {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+@media (min-width: 992px) {
+    .song-card {
+        width: 200px;
+    }
+
+    .song-card-img {
+        width: 200px;
+        height: 200px;
+    }
+}
+
+.song-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 5px 20px rgba(255, 255, 255, 0.2);
+}
+
+/* testo song card */
+.song-card-title {
+    margin-bottom: 0.25rem;
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.song-card-artist {
+    margin-bottom: 0;
+    font-size: 0.75rem;
+    color: #999;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .song-card-title {
+        font-size: 1rem;
+    }
+
+    .song-card-artist {
+        font-size: 0.875rem;
+    }
 }

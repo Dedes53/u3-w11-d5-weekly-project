@@ -7,9 +7,9 @@ import Episodio5 from '../assets/images/2e.png'
 
 function NuoviEpisodi() {
     return (
-        <>
+        <div className="my-4">
             <h4>Nuovi episodi radio</h4>
-            <div className="d-flex flex-nowrap overflow-auto gap-3">
+            <div className="songs-wrapper">
                 <EpisodCard
                     image={Episodio1}
                     title="Prologo con Abuelo"
@@ -31,7 +31,7 @@ function NuoviEpisodi() {
                     title="Chart Spotlight: Julia Michaels"
                 />
             </div>
-        </>
+        </div>
     )
 }
 

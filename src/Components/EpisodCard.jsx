@@ -1,13 +1,12 @@
 function EpisodCard(props) {
     return (
-        <div>
+        <div className="song-card">
             <img
-                className="rounded"
-                style={{ width: "150px" }}
+                className="rounded song-card-img"
                 src={props.image}
                 alt="immagine episodio"
             />
-            <p>{props.title}</p>
+            <p className="song-card-title">{props.title}</p>
         </div>
     )
 }

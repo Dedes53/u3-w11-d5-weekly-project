@@ -7,17 +7,19 @@ import AppleMusicLogo from './AppleMusicLogo';
 function NavComponent() {
     return (
         <Navbar id="navbar" expand="lg" className="bg-body-tertiary">
-            <Container>
+            <Container className=" d-flex justify-content-between ">
 
-                <Navbar.Toggle className="color-am" aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse className="color-am" id="basic-navbar-nav">
-                    <Nav className="me-auto color-am">
-                        <Nav.Link className="color-am" href="#home">Home</Nav.Link>
-                        <Nav.Link className="color-am" href="#link">Link</Nav.Link>
+                <div>
+                    <Navbar.Toggle className="color-am" aria-controls="basic-navbar-nav" />
+                    <Navbar.Collapse className="color-am" id="basic-navbar-nav">
+                        <Nav className="me-auto color-am">
+                            <Nav.Link className="color-am" href="#home">Home</Nav.Link>
+                            <Nav.Link className="color-am" href="#link">Link</Nav.Link>
 
 
-                    </Nav>
-                </Navbar.Collapse>
+                        </Nav>
+                    </Navbar.Collapse>
+                </div>
 
                 <Navbar.Brand href="#home" ><AppleMusicLogo /></Navbar.Brand>
 
