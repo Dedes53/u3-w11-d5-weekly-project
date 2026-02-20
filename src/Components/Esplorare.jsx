@@ -17,7 +17,7 @@ function Esplorare() {
     ]
 
     return (
-        <Container fluid className="p-3">
+        <Container className="p-3">
             <h4>Altro da esplorare</h4>
 
             <Row className="g-3 ">

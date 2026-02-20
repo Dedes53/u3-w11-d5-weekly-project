@@ -4,6 +4,7 @@ import Episodio2 from '../assets/images/2b.png'
 import Episodio3 from '../assets/images/2c.png'
 import Episodio4 from '../assets/images/2d.png'
 import Episodio5 from '../assets/images/2e.png'
+import Episodio6 from '../assets/images/2f.png'
 
 function NuoviEpisodi() {
     return (
@@ -29,6 +30,10 @@ function NuoviEpisodi() {
                 <EpisodCard
                     image={Episodio5}
                     title="Chart Spotlight: Julia Michaels"
+                />
+                <EpisodCard
+                    image={Episodio6}
+                    title="Karry & Travis Mills"
                 />
             </div>
         </div>

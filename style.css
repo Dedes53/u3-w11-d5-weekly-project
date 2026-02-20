@@ -204,3 +204,23 @@ body {
         font-size: 0.875rem;
     }
 }
+
+
+
+.exp-link-card {
+    background-color: #000;
+    border-radius: 1rem;
+    padding: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    height: 100%;
+}
+
+.exp-link-card:hover {
+    background-color: #1a1a1a;
+    transform: translateY(-2px);
+}
+
+.exp-link-card p {
+    color: var(--color-am, #fc3c44);
+}
