@@ -1,7 +1,7 @@
 import './App.css'
 
 import NavComponent from './Components/Layout/NavComponent'
-import Novita from './Components/Layout/Novita'
+import NovitaSection from './Components/Layout/Novitasection'
 
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
   return (
     <>
       <NavComponent />
-      <Novita />
+      <NovitaSection />
     </>
   )
 }
