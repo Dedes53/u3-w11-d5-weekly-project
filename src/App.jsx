@@ -1,7 +1,7 @@
 import './App.css'
-import 'bootstrap/dist/css/bootstrap.min.css'
-import NavComponent from './Components/Layout/NavComponent'
 
+import NavComponent from './Components/Layout/NavComponent'
+import Novita from './Components/Layout/Novita'
 
 
 function App() {
@@ -9,6 +9,7 @@ function App() {
   return (
     <>
       <NavComponent />
+      <Novita />
     </>
   )
 }

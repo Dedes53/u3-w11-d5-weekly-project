@@ -1,3 +1,7 @@
-.red {
-  color: red;
+:root {
+  --AppleMusicRed: #FA586A;
+}
+
+.color-am {
+  color: var(--AppleMusicRed);
 }
