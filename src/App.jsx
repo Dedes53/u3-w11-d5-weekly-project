@@ -1,8 +1,7 @@
-import './style.css'
+import '../style.css'
 
-import NavComponent from './Components/Layout/NavComponent'
-import NovitaSection from './Components/Layout/Novitasection'
-import RadioCarousel from './Components/Layout/RadioCarousel'
+import NavComponent from './Components/NavComponent'
+
 
 function App() {
 

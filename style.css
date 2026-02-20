@@ -2,10 +2,18 @@
     --AppleMusicRed: #FA586A;
 }
 
+#logo {
+    filter: brightness(0) invert(1);
+}
+
 .color-am {
     color: var(--AppleMusicRed);
 }
 
 .b-b {
     border-bottom: 1px solid rgba(211, 211, 211, 0.273);
+}
+
+#navbar {
+    color: var(--AppleMusicRed);
 }

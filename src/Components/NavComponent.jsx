@@ -1,13 +1,12 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 
-import AppleMusicLogo from '../AppleMusicLogo';
+import AppleMusicLogo from './AppleMusicLogo';
 
 function NavComponent() {
     return (
-        <Navbar expand="lg" className="bg-body-tertiary">
+        <Navbar id="navbar" expand="lg" className="bg-body-tertiary">
             <Container>
 
                 <Navbar.Toggle className="color-am" aria-controls="basic-navbar-nav" />
