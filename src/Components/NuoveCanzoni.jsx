@@ -1,5 +1,5 @@
 import { useDispatch } from 'react-redux';
-import { setCurrentSong } from '../redux/actions/musicActions';
+import { setCurrentSong } from '../redux/actions/playerActions';
 
 function NuoveCanzoni({ songData }) {
     const dispatch = useDispatch();

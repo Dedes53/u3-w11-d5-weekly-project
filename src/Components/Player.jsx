@@ -1,13 +1,13 @@
 import { useSelector, useDispatch } from 'react-redux';
-import { togglePlay, stopSong } from '../redux/actions/musicActions';
+import { togglePlay, stopSong } from '../redux/actions/playerActions';
 import { Container, Row, Col } from 'react-bootstrap';
 
 function Player() {
     const dispatch = useDispatch();
 
-    const { currentSong, isPlaying } = useSelector((state) => state.music);
 
-    // se non c'è nessuna canzone selezionata
+    const { currentSong, isPlaying } = useSelector((state) => state.player);
+
     if (!currentSong) {
         return (
             <div className="player-fixed bg-dark text-white py-3 border-top border-secondary">
@@ -25,7 +25,7 @@ function Player() {
             <Container>
                 <Row className="align-items-center">
 
-                    {/* immagine della canzone */}
+
                     <Col xs={6} md={4} className="d-flex align-items-center gap-3">
                         <img
                             src={currentSong.album.cover_small}
@@ -48,7 +48,7 @@ function Player() {
                         </div>
                     </Col>
 
-                    {/* controlli */}
+
                     <Col xs={6} md={4} className="text-center">
                         <button
                             className="btn btn-outline-light btn-sm mx-2"
@@ -64,7 +64,7 @@ function Player() {
                         </button>
                     </Col>
 
-                    {/* durata */}
+
                     <Col md={4} className="d-none d-md-block text-end">
                         <small className="text-muted">
                             {Math.floor(currentSong.duration / 60)}:{String(currentSong.duration % 60).padStart(2, '0')}

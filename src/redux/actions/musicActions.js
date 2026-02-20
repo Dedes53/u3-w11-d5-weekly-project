@@ -1,33 +1,13 @@
 export const FETCH_SONGS_REQUEST = 'FETCH_SONGS_REQUEST';
 export const FETCH_SONGS_SUCCESS = 'FETCH_SONGS_SUCCESS';
 export const FETCH_SONGS_FAILURE = 'FETCH_SONGS_FAILURE';
-
-
-
-export const SET_CURRENT_SONG = 'SET_CURRENT_SONG';
-export const TOGGLE_PLAY = 'TOGGLE_PLAY';
-export const STOP_SONG = 'STOP_SONG';
 export const CLEAR_ERROR = 'CLEAR_ERROR';
 
 
-export const setCurrentSong = (song) => ({
-    type: SET_CURRENT_SONG,
-    payload: song,
-});
-
-export const togglePlay = () => ({
-    type: TOGGLE_PLAY,
-});
-
-export const stopSong = () => ({
-    type: STOP_SONG,
-});
 
 export const clearError = () => ({
     type: CLEAR_ERROR,
 });
-
-
 
 // chiamata API 
 const API_BASE_URL = 'https://striveschool-api.herokuapp.com/api/deezer/search';
@@ -64,3 +44,5 @@ export const fetchSongs = (query = 'queen') => {
             });
     };
 };
+
+
